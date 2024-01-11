@@ -103,7 +103,7 @@ $
 
 Available Commands and what they do
 -------------------------------------------------------------------------------------------------------
-| Command | Description |
+|   Command   |    Description    |
 | quit or EOF | Exits the program |
 | Usage | By itself |
 | ------- | ------- |
