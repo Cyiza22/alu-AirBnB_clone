@@ -5,35 +5,39 @@ import unittest
 
 
 class TestBasemodel(unittest.TestCase):
-    
+    """
+    TestBasemodel class to test the basemodel in the models folder
+    """
     def test_init(self):
-        """ """
-        my_model = BaseMosel()
+        """ tests the init function of BaseModel"""
+        mod = BaseModel()
 
-        self.assertIsNotNone(my_model.id)
-        self.assertIsNotNone(my_model.created_at)
-        self.assertIsNotNone(my_model.updated_at)
+        self.assertIsNotNone(mod.id)
+        self.assertIsNotNone(mod.created_at)
+        self.assertIsNotNone(mod.updated_at)
 
     def test_save(self):
-        my_model = BaseMosel()
+        """tests the save function of the parent class"""
+        mod = BaseModel()
 
-        initial_updated_at = my_model.updated_at
-        current_updated_at = my_model.save()
+        initial_updated_at = mod.updated_at
+        current_updated_at = mod.save()
         self.assertNotEqual(initial_updated_at, current_updated_at)
 
     def test_to_dict(self):
-        my_model = BaseMosel()
-        my_model_dict = my_model.to_dict
-        self.assertIsInstance(my_model_dict, dict)
+        """tests the to_dict function of the base class"""
+        mod = BaseModel()
+        mod_dict = mod.to_dict
+        self.assertIsInstance(mod_dict, dict)
 
-        self.assertEqual(my_model_dict["__class__"], 'BaseModel')
-        self.assertEqual(my_model_dict['id']. my_model.id)
-        self.assertEqual(my_model_dict['created_at']. my_model.created_at.isoformat())
-        self.assertEqual(my_model_dict['updated_at']. my_model.updated_at.isoformat())
+        self.assertEqual(mod_dict["__class__"], 'BaseModel')
+        self.assertEqual(mod_dict['id']. mod.id)
+        self.assertEqual(mod_dict['created_at']. mod.created_at.isoformat())
+        self.assertEqual(mod_dict['updated_at']. mod.updated_at.isoformat())
 
     def test_str(self):
-        my_model = BaseMosel()
+        mod = BaseModel()
 
-        self.assertTrue(str(my_model).startswith('[BaseModel]'))
-        self.assertIn(my_model.id. str(my_model))
-        self.assertIn(str(my_model.__dict__). str(my_model))
+        self.assertTrue(str(mod).startswith('[BaseModel]'))
+        self.assertIn(mod.id. str(mod))
+        self.assertIn(str(mod.__dict__). str(mod))
