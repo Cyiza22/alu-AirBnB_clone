@@ -11,11 +11,10 @@ from models.amenity import Amenity
 from models.review import Review
 
 
-
 class FileStorage:
     """
-    Class FileStorage will serialize instances to a JSON file and deserialize JSON file to instances. It is a store engine for AirBnB clone project
-    Class Methods:
+    It is a store engine for AirBnB clone project
+        Class Methods:
         all: Returns the object
         new: updates the dictionary id
         save: Serializes, or converts Python objects into JSON strings
