@@ -2,7 +2,7 @@
 """defines all common methods of other classes with using parent class"""
 import uuid
 from datetime import datetime
-
+from . import storage
 
 class BaseModel:
     """A base class for all hbnb models"""
