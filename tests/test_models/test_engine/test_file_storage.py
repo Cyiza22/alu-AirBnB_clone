@@ -21,7 +21,7 @@ class Test_FileStorage(unittest.TestCase):
         class_dict (dict): A dictionary of all the classes.
     """
 
-   def setUp(self):
+    def setUp(self):
         """ Set up test environment """
         del_list = []
         for key in storage._FileStorage__objects.keys():
