@@ -1,9 +1,11 @@
-#AirBnB Project
+AirBnB Project
 =======================================================================================================
-##Project Description
+Project Description
+-------------------------------------------------------------------------------------------------------
 Welcome to the Airbnb project, your first step towards building a full-fledged web application - the Airbnb clone. This initial phase is crucial as it sets the foundation for subsequent projects involving HTML/CSS templating, database storage, API integration, and front-end development. The backend of this project is powered by Python, leveraging its object-oriented programming (OOP) capabilities.
 
-##Description of the console/command interpreter
+Description of the console/command interpreter
+-------------------------------------------------------------------------------------------------------
 The command interpreter/console serves as the interface of the application, resembling the Bash shell with a limited set of commands specifically designed for the Airbnb website. Developed with Python OOP programming, it allows users to interact with the backend effectively. Some available commands include:
 
 * show
@@ -14,12 +16,15 @@ The command interpreter/console serves as the interface of the application, rese
 
 These commands enable users to manage objects within the project, such as creating new users or places, retrieving objects from files or databases, performing operations on objects, updating attributes, and destroying objects.
 
-##How to Start It
+How to Start It
+-------------------------------------------------------------------------------------------------------
 To start the console, follow these steps:
 
 1. Clone the repository:
 > git clone https://github.com/Cyiza22/alu-AirBnB_clone.git
+
 After cloning the repository you will have a folder called AirBnB_clone. In here there will be several files that allow the program to work.
+
 > /console.py : The main executable of the project, the command interpreter.
 
 > models/engine/file_storage.py: Class that serializes instances to a JSON file and deserializes JSON file to instances
@@ -41,18 +46,24 @@ After cloning the repository you will have a folder called AirBnB_clone. In here
 > models/review.py: Review class that inherits from BaseModel
 
 2. Navigate to the project repository:
-> cd alu-AirBnB_clone
+```
+cd alu-AirBnB_clone
+```
 
 3. Run the command interpreter:
-> python console.py
+```
+python console.py 
+```
 
-##How to Use It
-
+How to Use It
+-------------------------------------------------------------------------------------------------------
 It can work in two different modes:
 **Interactive and Non-interactive.**
-###Interactive Mode
+### Interactive Mode ##
+
 In interactive mode, the console will display a prompt (hbnb) indicating that the user can write and execute a command. After the command is run, the prompt will appear again a wait for a new command. This can go indefinitely as long as the user does not exit the program.
-> $ ./console.py
+```
+$ ./console.py
 (hbnb) help
 
 Documented commands (type help <topic>):
@@ -63,10 +74,11 @@ EOF  help  quit
 (hbnb) 
 (hbnb) quit
 $
-
-###Non-Interactive Mode
+```
+### Non-Interactive Mode ##
 In non-interactive mode, the shell will need to be run with a command input piped into its execution so that the command is run as soon as the Shell starts. In this mode no prompt will appear, and no further input will be expected from the user.
-> $ echo "help" | ./console.py
+```
+$ echo "help" | ./console.py
 (hbnb)
 
 Documented commands (type help <topic>):
@@ -85,8 +97,10 @@ Documented commands (type help <topic>):
 EOF  help  quit
 (hbnb) 
 $
+```
 
-##Available Commands and what they do
+Available Commands and what they do
+-------------------------------------------------------------------------------------------------------
 | Command | Description |
 | quit or EOF | Exits the program |
 | Usage | By itself |
