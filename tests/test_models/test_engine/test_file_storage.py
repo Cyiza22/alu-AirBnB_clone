@@ -72,7 +72,7 @@ class Test_FileStorage(unittest.TestCase):
         self.assertTrue(os.path.exists('storage.json'))
 
     def test_reload(self):
-         """ Storage file is successfully loaded to __objects """
+        """ Storage file is successfully loaded to __objects """
         new = BaseModel()
         storage.save()
         storage.reload()
