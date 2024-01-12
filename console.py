@@ -285,7 +285,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
         else:
             print([str(obj) for key, obj in all_objects.items()
-                if key.split('.')[0] == cls])
+                   if key.split('.')[0] == cls])
 
     def help_all(self):
         print(
@@ -364,7 +364,7 @@ class HBNBCommand(cmd.Cmd):
 
         # If it reaches here, Print all objects of a specific class
         print(len([str(obj) for key, obj in all_objects.items()
-            if key.split('.')[0] == cls]))
+                   if key.split('.')[0] == cls]))
 
     def help_count(self):
         print("Count command to count the number of instances of a class")
