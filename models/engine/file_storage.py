@@ -22,7 +22,7 @@ class FileStorage:
 
     def all(self, cls=None):
         """
-        Returns a list of all objects if cls is None. If cls is provided, return all objects of that type.
+        Returns a list of all objects if cls is None.
         """
         return FileStorage.__objects
 
@@ -72,7 +72,7 @@ class FileStorage:
                     del FileStorage.__objects[key]
                     print("Deleted: {}".format(key))
                     self.save()
- 
+
     def close(self):
         """closing instance"""
         self.reload()
