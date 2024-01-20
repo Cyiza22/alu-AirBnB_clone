@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirBnB clone</title>
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="styles/4-common.css" />
+    <link rel="stylesheet" href="styles/3-header.css" />
+    <link rel="stylesheet" href="styles/3-footer.css" />
+    <link rel="stylesheet" href="styles/6-filters.css" />
+    <link rel="stylesheet" href="styles/100-places.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo"></div>
+    </header>
+
+    <div class="container">
+      <section class="filters">
+        <div class="locations">
+          <h3>States</h3>
+          <h4>California, Arizona...</h4>
+          <ul class="popover">
+            <li><h2>California:</h2></li>
+            <ul>
+              <li>Los Angeles</li>
+              <li>San Francisco</li>
+            </ul>
+            <li><h2>Arizona:</h2></li>
+            <ul>
+              <li>Tucson</li>
+              <li>Chandler</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="amenities">
+          <h3>Amenities</h3>
+          <h4>Internet, Kitchen...</h4>
+          <ul class="popover">
+            <li>Internet</li>
+            <li>Kitchen utensils</li>
+            <li>Television</li>
+            <li>Sofa</li>
+          </ul>
+        </div>
+        <button>Search</button>
+      </section>
+
+      <section class="places">
+        <h1>Places</h1>
+        <article>
+          <h2>My Home</h2>
+          <div class="price_by_night">
+            <p>$150</p>
+          </div>
+          <div class="information">
+            <div class="max_guest">
+              <div class="guest_icon"></div>
+              <p>6 Guests</p>
+            </div>
+            <div class="number_rooms">
+              <div class="room_icon"></div>
+              <p>3 Rooms</p>
+            </div>
+            <div class="number_bathrooms">
+              <div class="bath_icon"></div>
+              <p>2 Bathrooms</p>
+            </div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>John Lennon</p>
+          </div>
+          <div class="description">
+            <p>
+              Welcome to our spacious and inviting home nestled in a quiet
+              neighborhood. This 3-bedroom, 2-bathroom house is perfect for
+              families or groups of friends looking for a comfortable and
+              stylish retreat. Enjoy the stunning panoramic views from the
+              backyard, unwind in the cozy living room, and make lasting
+              memories in the fully-equipped kitchen. Conveniently located near
+              [local attractions], our home is your ideal home away from home.
+            </p>
+          </div>
+          <div class="amenities">
+            <h2 class="article_subtitle">Amenities</h2>
+            <ul>
+              <li>
+                <div class="tv_icon"></div>
+                TV
+              </li>
+              <li>
+                <div class="wifi_icon"></div>
+                Wifi
+              </li>
+              <li>
+                <div class="pet_icon"></div>
+                Pet friendly
+              </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2 class="article_subtitle">Reviews</h2>
+            <ul>
+              <li>
+                <div class="review_item">
+                  <h3>From Bob Dylan the 27th January 2017</h3>
+                  <p class="review_text">
+                    Wow, what can I say?! I'm a real rolling stone, you may have
+                    heard, but - by golly - I'd just as well settle down in this
+                    humble home, if you'd part with it - course, I'm sure you
+                    wouldn't. Real shame too. Oh well...
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="review_item">
+                  <h3>From Justin Majetich the 28th April 1991</h3>
+                  <p class="review_text">
+                    I was birthed in this here bathtub today!
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>Tiny House</h2>
+          <div class="price_by_night">
+            <p>$80</p>
+          </div>
+          <div class="information">
+            <div class="max_guest">
+              <div class="guest_icon"></div>
+              <p>2 Guests</p>
+            </div>
+            <div class="number_rooms">
+              <div class="room_icon"></div>
+              <p>1 Room</p>
+            </div>
+            <div class="number_bathrooms">
+              <div class="bath_icon"></div>
+              <p>1 Bathroom</p>
+            </div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Mark Jason</p>
+          </div>
+          <div class="description">
+            <p>
+              This well-equipped kitchenette caters to your culinary needs, and
+              the sleeping loft offers a cozy sanctuary. Tucked away in nature
+              yet close to Hawaii beach, the tiny house provides tranquility and
+              adventure. Explore nearby transport options for easy access to
+              exciting destinations
+            </p>
+          </div>
+          <div class="amenities">
+            <h2 class="article_subtitle">Amenities</h2>
+            <ul>
+              <li>
+                <div class="tv_icon"></div>
+                TV
+              </li>
+              <li>
+                <div class="wifi_icon"></div>
+                Wifi
+              </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2 class="article_subtitle">Reviews</h2>
+            <ul>
+              <li>
+                <div class="review_item">
+                  <h3>From Bilbo Baggins the 6th June 2089</h3>
+                  <p class="review_text">
+                    The place was spotless, and Adrienne was an excellent host,
+                    leaving fresh biscuits out for my ravenous arrival.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>A suite</h2>
+          <div class="price_by_night">
+            <p>$120</p>
+          </div>
+          <div class="information">
+            <div class="max_guest">
+              <div class="guest_icon"></div>
+              <p>2 Guests</p>
+            </div>
+            <div class="number_rooms">
+              <div class="room_icon"></div>
+              <p>1 Room</p>
+            </div>
+            <div class="number_bathrooms">
+              <div class="bath_icon"></div>
+              <p>1 Bathroom</p>
+            </div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Emily Rodriguez</p>
+          </div>
+          <div class="description">
+            <p>
+              Immerse yourself in urban living with Emily's modern suite in the
+              heart of the city. The stylish one-bedroom space features a
+              well-appointed kitchen and a chic living area. Nearby, trendy
+              restaurants and cultural hotspots beckon. With convenient access
+              to transport hubs, Emily's suite serves as the perfect gateway to
+              the city's vibrant energy and nearby adventures.
+            </p>
+          </div>
+          <div class="amenities">
+            <h2 class="article_subtitle">Amenities</h2>
+            <ul>
+              <li>
+                <div class="pet_icon"></div>
+                Pet friendly
+              </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2 class="article_subtitle">Reviews</h2>
+            <ul>
+              <li>
+                <div class="review_item">
+                  <h3>From Beyonce Knowles the 16th September 2013</h3>
+                  <p class="review_text">
+                    Betty was a sweetheart. Jay, I and the kids thoroughly
+                    enjoyed out stay.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="review_item">
+                  <h3>From Julien Barbier the 1th August 2008</h3>
+                  <p class="review_text">
+                    What a beautiful home! I had one of the best night's sleeps
+                    of my life and woke up with an idea!
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <footer>
+      <p>Best School</p>
+    </footer>
+  </body>
+</html>
